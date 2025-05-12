@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Retro Game Archive</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #0f0;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .menu {
+      width: 200px;
+      background-color: #111;
+      border-right: 2px dashed #0f0;
+      padding: 20px;
+    }
+
+    .menu h3 {
+      color: #ff0;
+      text-align: center;
+    }
+
+    .menu a {
+      display: block;
+      color: #0ff;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    .menu a:hover {
+      color: yellow;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .game {
+      display: none;
+    }
+
+    .game:target {
+      display: block;
+    }
+
+    .default {
+      display: block;
+    }
+
+    a.download-link {
+      color: #fff;
+      background-color: #0f0;
+      padding: 5px 10px;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    a.download-link:hover {
+      background-color: #ff0;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <h3>🎮 Games</h3>
+      <a href="#game1">Super Blaster</a>
+      <a href="#game2">Alien Invasion</a>
+      <a href="#game3">Maze Runner</a>
+    </div>
+
+    <div class="content">
+      <div id="game1" class="game">
+        <h2>Super Blaster</h2>
+        <p>A retro-style shooting game. Defeat all the aliens!</p>
+        <a class="download-link" href="games/super-blaster.zip" download>⬇️ Download</a>
+      </div>
+
+      <div id="game2" class="game">
+        <h2>Alien Invasion</h2>
+        <p>Protect Earth from alien attackers in this 8-bit game.</p>
+        <a class="download-link" href="games/alien-invasion.zip" download>⬇️ Download</a>
+      </div>
+
+      <div id="game3" class="game">
+        <h2>Maze Runner</h2>
+        <p>Find your way out before time runs out!</p>
+        <a class="download-link" href="games/maze-runner.zip" download>⬇️ Download</a>
+      </div>
+
+      <div class="default">
+        <h2>👾 Welcome to the Retro Game Archive!</h2>
+        <p>Select a game from the menu to view more info and download it.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
